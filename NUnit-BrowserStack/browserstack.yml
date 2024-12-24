@@ -52,8 +52,8 @@ platforms:
 browserstackLocal: true # <boolean> (Default false)
 
 browserStackLocalOptions:
-  binarypath: /home/vsts/work/1/s/BrowserStackLocal
-  logFile: /home/vsts/work/1/s/local.log
+  binarypath: $(Pipeline.Workspace)/s/binary/BrowserStackLocal
+  logFile: $(Pipeline.Workspace)/s/binary/local.log
 # Options to be passed to BrowserStack local in-case of advanced configurations
   # localIdentifier: # <string> (Default: null) Needed if you need to run multiple instances of local.
   # forceLocal: true  # <boolean> (Default: false) Set to true if you need to resolve all your traffic via BrowserStack Local tunnel.
